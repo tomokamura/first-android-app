@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:padding="16dp">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
     <EditText
         android:id="@+id/editTextMemo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="ここにメモを入力" />
+        android:hint="メモを入力" />
 
     <Button
-        android:id="@+id/buttonSave"
+        android:id="@+id/buttonAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="保存" />
+        android:text="追加" />
 
-    <TextView
-        android:id="@+id/textViewResult"
+    <ListView
+        android:id="@+id/listViewMemos"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="16dp"
-        android:text="保存されたメモがここに表示されます" />
-</LinearLayout> <!-- ← これがきちんと閉じられている状態 -->
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
